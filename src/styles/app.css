@@ -99,3 +99,27 @@ nav {
     display: inline-block;
     margin: 0.2rem;
 }
+
+header{
+    background: url(/src/img/header-bg.jpg) no-repeat center center / cover;
+    height: 96vh;
+    border-radius: 0 0 72px 72px;
+    position: relative;
+}
+
+h1{
+    font-size: 120px;
+    color: var(--color-white);
+    position: absolute;
+    bottom: 64px;
+    line-height: 90.03%;
+    mix-blend-mode: overlay;
+}
+
+h1 span{
+    margin-bottom: -32px;
+    display: inline-block;
+    width: 100%;
+    font-size: 32px;
+    mix-blend-mode: screen !important;
+}
