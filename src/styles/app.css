@@ -5,6 +5,7 @@
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     /* max-width: ; */
 }
@@ -17,7 +18,7 @@
     --color-secondary: #22DFDA;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
@@ -26,9 +27,13 @@ body {
     font-family: 'Exo', sans-serif;
 }
 
-nav {
-    position: fixed;
+header {
+    position: fixed !important;
+    width: 100%;
     top: 24px;
+}
+
+nav {
     backdrop-filter: blur(12px);
     /* Note: backdrop-filter has minimal browser support */
     background: rgba(0, 7, 15, 0.4);
@@ -38,7 +43,7 @@ nav {
     padding: 16px 24px 16px 40px !important;
 }
 
-.nav-divider{
+.nav-divider {
     display: inline-block;
     width: 1px;
     height: 32px;
@@ -53,19 +58,19 @@ nav {
 }
 
 .nav-link:first-child {
-    margin:0  24px 0 0;
+    margin: 0 24px 0 0;
 }
 
-.nav-link::after{
+.nav-link::after {
     content: "";
     display: block;
     width: 0px;
     height: 1px;
-    background-color: var(--color-primary); 
+    background-color: var(--color-primary);
     transition: .3s
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--color-white);
 }
 
@@ -83,12 +88,12 @@ nav {
     transition: .3s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--color-primary);
 }
 
 /* other */
-.social-cta{
+.social-cta {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,31 +101,35 @@ nav {
     width: 100%;
 }
 
-.social-icon{
+.social-icon {
     display: inline-block;
     margin: 0.2rem;
 }
 
-header{
-    background: url("https://github.com/MVDES/mmvs-prt/blob/main/src/img/header-bg.jpg?raw=true") no-repeat center center / cover;
-    height: 96vh;
-    border-radius: 0 0 72px 72px;
-    position: relative;
-}
-
-h1{
+h1 {
     font-size: 120px;
     color: var(--color-white);
-    position: absolute;
-    bottom: 64px;
-    line-height: 90.03%;
     mix-blend-mode: overlay;
+    z-index: 20;
 }
 
-h1 span{
+h1 span {
     margin-bottom: -32px;
     display: inline-block;
     width: 100%;
     font-size: 32px;
-    mix-blend-mode: screen !important;
+    /* mix-blend-mode: screen !important; */
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    line-height: 90.03%;
+    background: url("https://github.com/MVDES/mmvs-prt/blob/main/src/img/header-bg.jpg?raw=true") no-repeat center center / cover;
+    height: 96vh;
+    border-radius: 0 0 72px 72px;
+    z-index: -1;
+    padding-bottom: 72px;
 }
