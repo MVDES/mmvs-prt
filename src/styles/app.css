@@ -28,6 +28,7 @@ body {
 
 nav {
     position: fixed;
+    top: 24px;
     backdrop-filter: blur(12px);
     /* Note: backdrop-filter has minimal browser support */
     background: rgba(0, 7, 15, 0.4);
@@ -101,7 +102,7 @@ nav {
 }
 
 header{
-    background: url(/src/img/header-bg.jpg) no-repeat center center / cover;
+    background: url("/src/img/header-bg.jpg") no-repeat center center / cover;
     height: 96vh;
     border-radius: 0 0 72px 72px;
     position: relative;
