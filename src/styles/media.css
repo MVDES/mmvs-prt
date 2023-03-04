@@ -7,6 +7,7 @@
         width: 100%;
         text-align: center;
         margin-bottom: 12px;
+        background-color: var(--color-primary);
     }
 
     .nav-divider {
@@ -22,13 +23,13 @@
     }
 
     .nav-link:first-child {
-        margin: 8px 0;
+        margin: 4px 0;
     }
 
     .nav-link {
         text-align: center;
         /* margin: 120px 0; */
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .social-cta {
@@ -57,4 +58,8 @@ h1{
 
 h1 span{
     font-size: 18px;
+}
+
+.hero{
+    padding-bottom: 32px;
 }
